@@ -17,14 +17,16 @@
             <h2 class="title">latest  articles</h2>
             <a class="more" href="#">more</a>
 
-            <div class="single_left_coloum floatleft"> <img src="{% static 'images/single_featured.png' %}" alt="" />
-              <h3>{{ article.title }}</h3>
-              <p>{{ article.description }}</p>
-              <a class="readmore" href="#">read more</a> </div>
+
+            {% include 'base/general.html.twig' %}
+
           </div>
-          <div class="single_left_coloum_wrapper gallery">
-            <h2 class="title">gallery</h2>
-            <a class="more" href="#">more</a> <img src="{% static 'images/single_featured.png' %}" alt="" /> <img src="{% static 'images/single_featured.png' %}" alt="" /> <img src="{% static 'images/single_featured.png' %}" alt="" /> <img src="{% static 'images/single_featured.png' %}" alt="" /> <img src="{% static 'images/single_featured.png' %}" alt="" /> <img src="{% static 'images/single_featured.png' %}" alt="" /> </div>
+            <div class="single_left_coloum_wrapper single_cat_left">
+            <h2 class="title">tech news</h2>
+            <a class="more" href="#">more</a>
+
+  {% include 'base/technology.html.twig' %}
+          </div>
           <div class="single_left_coloum_wrapper single_cat_left">
             <h2 class="title">tech news</h2>
             <a class="more" href="#">more</a>

@@ -1,0 +1,10 @@
+{% for article in articles %}
+<div class="single_cat_left_content floatleft">
+              <h3>{{ article.title }} </h3>
+              <p>{{ article.description }}</p>
+              <p class="single_cat_left_content_meta">by <span>{{ article.author }}</span>
+                 {% if  article.source.name %}
+                  |  Source: {{ article.source.name }}</p>
+    {% endif %}
+            </div>
+{% endfor %}

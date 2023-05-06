@@ -5,11 +5,11 @@
             <li><a href="#">Middle East</a></li>
             <li><a href="#">Africa</a></li>
             <li><a href="#">Asia</a></li>
-            <li><a href="#">US</a></li>
+            <li><a href="{% url 'home' %}?country=us">US</a></li>
             <li><a href="#">Canada</a></li>
           </ul>
         </li>
-        <li><a href="#">sports</a></li>
+        <li><a href="{% url 'home' %}?category=sports">sports</a></li>
 
         </li>
         <li><a href="#">business</a></li>
