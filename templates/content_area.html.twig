@@ -1,155 +1,289 @@
 <div class="content_area">
-  {% load static %}
-      <div class="main_content floatleft">
+    {% load static %}
+    <div class="main_content floatleft">
         <div class="left_coloum floatleft">
-          <div class="single_left_coloum_wrapper">
+            <div class="single_left_coloum_wrapper">
 
-            <h2 class="title">from   around   the   world</h2>
-            <a class="more" href="#">more</a>
-            {% for article in articles %}
-            <div class="single_left_coloum floatleft"> <img src="{{ article.urlToImage }}" alt="" />
-              <h3>{{ article.title }}</h3>
-              <p>{{ article.description }}</p>
-              <a class="readmore" href="{{ article.url }}" target="_blank">read more</a> </div>
-            {% endfor %}
-          </div>
-          <div class="single_left_coloum_wrapper">
-            <h2 class="title">latest  articles</h2>
-            <a class="more" href="#">more</a>
+                <h2 class="title">from around the world</h2>
+                <a class="more" href="#">more</a>
+                {% for article in articles %}
+                    <div class="single_left_coloum floatleft"><img src="{{ article.urlToImage }}" alt=""/>
+                        <h3>{{ article.title }}</h3>
+                        <p>{{ article.description }}</p>
+                        <a class="readmore" href="{{ article.url }}" target="_blank">read more</a></div>
+                {% endfor %}
+            </div>
+            <div class="single_left_coloum_wrapper">
+                <h2 class="title">latest articles</h2>
+                <a class="more" href="#">more</a>
 
 
-            {% include 'base/general.html.twig' %}
+                <div class="single_left_coloum floatleft"><img
+                            src="{% static 'images/230506184822-05-allen-texas-outlet-mall-active-shooter-050623.png' %}"
+                            alt=""/>
+                    <h3>8 killed and 7 wounded in Texas mall shooting. The gunman is also dead</h3>
+                    <p>
+                        Eight people were killed in a shooting at an outlet mall near Dallas, and seven victims are
+                        being treated at trauma facilities, officials said Saturday night. The gunman, who authorities
+                        believe was acting alone, is also dead.
 
-          </div>
+                        Allen, Texas, Fire Chief Jonathan Boyd said that at least nine people were sent to hospitals.
+                        “Of those that we transported, two have since died. Three are in critical surgery, and four are
+                        stable,” said Boyd.
+
+                        A Dallas-area medical group says it was treating victims as young as 5 years old.
+
+                        Authorities in Allen responded to the afternoon shooting at Allen Premium Outlets, prompting
+                        shoppers and workers to hide. </p>
+                    <a class="readmore" href="" target="_blank">read more</a></div>
+                <div class="single_left_coloum floatleft"><img
+                            src="{% static 'images/230506055352-10-king-charles-coronation-0506-prince-harry.png' %}"
+                            alt=""/>
+                    <h3>Prince Harry attends coronation ceremony but misses balcony flypast amid family tensions</h3>
+                    <p>Prince Harry attended the coronation of King Charles III on Saturday – the first time he has been
+                        seen in public with his family since the release of his explosive memoir “Spare.”
+
+                        However, the Duke of Sussex did not appear with members of the royal family to greet the public
+                        from the balcony of Buckingham Palace on Saturday afternoon – a flagship part of royal events.
+
+                        CNN understands that Prince Harry did not receive an invitation to join the family for this
+                        balcony moment, which featured a slimmed-down flypast by the Royal Air Force. Prince Andrew
+                        wasn’t present either. </p>
+                    <a class="readmore" href="" target="_blank">read more</a></div>
+                <div class="single_left_coloum floatleft"><img
+                            src="{% static 'images/230316102327-01-south-korea-youtube.png' %}"
+                            alt=""/>
+                    <h3>How YouTube became a force for free speech in South Korea</h3>
+                    <p>
+                        YouTube’s most watched daily live program in South Korea might surprise you. It is not about
+                        K-pop, it is not a K-drama, and has nothing to do with BlackPink.
+
+                        It is a provocative current affairs talk show called “Gyeomson (Modesty) is Nothing,” fronted by
+                        an irreverent host, Kim Ou-joon, whose lack of deference to authority is making waves in a
+                        country where traditional media has a reputation for respectful coverage.
+
+                        Kim’s style is reminiscent of a US late-night chat show host. Openly partisan, he says his aim
+                        is to counter-balance what he sees as a bias toward the conservative government with a liberal
+                        voice.
+
+                    </p>
+                    <a class="readmore" href="" target="_blank">read more</a></div>
+
+            </div>
             <div class="single_left_coloum_wrapper single_cat_left">
-            <h2 class="title">tech news</h2>
-            <a class="more" href="#">more</a>
+                <h2 class="title">Kenya news</h2>
+                <a class="more" href="#">more</a>
 
-  {% include 'base/technology.html.twig' %}
-          </div>
-          <div class="single_left_coloum_wrapper single_cat_left">
-            <h2 class="title">tech news</h2>
-            <a class="more" href="#">more</a>
-            <div class="single_cat_left_content floatleft">
-              <h3>Lorem ipsum dolor sit amet conse ctetur adipiscing elit </h3>
-              <p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor ...interdum</p>
-              <p class="single_cat_left_content_meta">by <span>John Doe</span> |  29 comments</p>
+
+                <div class="single_cat_left_content floatleft">
+                    <img src="{% static 'images/Fvc6eU7WcAM64Fp-og_image.png' %}" alt="">
+                    <h3>I Am Proud': Gideon Moi Congratulates Son, Kigen, On Engagement </h3>
+                    <p>Gideon Moi's son, Kigen Moi, on Saturday held a traditional engagement ceremony in Kericho.
+                        Kigen's bride is Rebecca Chepchumba.
+
+                        Kigen's father and former Baringo Senator, Gideon Moi, took to social media to congratulate his
+                        son for the step. </p>
+                    <p class="single_cat_left_content_meta">
+                        | Source: K24</p>
+
+                </div>
+                <div class="single_cat_left_content floatleft">
+                    <img src="{% static 'images/IMG-20230506-WA0007-og_image.png' %}" alt="">
+                    <h3>Kakamega: Families Count Losses After Arson Attack On Nine Houses </h3>
+                    <pFamilies in Busalwa village, Muranda ward, Shinyalu constituency, Kakamega county, are in distress
+                               after an arson attack left nine houses burnt to ashes.
+                               The fire is said to have been started by an angry mob that made its way through fences
+                               and caused destruction.
+
+                               The group is said to live near the Shavirotsi complex primary school and carried out the
+                               attack allegedly on suspicion of some villagers trespassing on the school
+                    's farm. </p>
+                    <p class="single_cat_left_content_meta">
+                        | Source: Citizen</p>
+
+                </div>
+                <div class="single_cat_left_content floatleft">
+                    <img src="{% static 'images/WhatsApp-Image-2023-05-04-at-23.17.37-og_image.png' %}" alt="">
+                    <h3>Uasin Gishu: Man's Body Retrieved From Dam After Heavy Rains </h3>
+                    <p>Uasin Gishu firefighting brigade on Thursday evening retrieved the body of a man from a dam in
+                        Tapsagoi ward, Turbo Sub-County.
+                        According to Uasin Gishu chief fire officer Wanyama Sitati, the deceased was about 21 years old,
+                        and is suspected to have drowned at the Sugoi Dam along the Sosiani River while he was trying to
+                        swim with friends.
+
+                        Sitati urged all residents to be cautious, especially with the heavy rains. </p>
+                    <p class="single_cat_left_content_meta">
+                        | Source: Citizen</p>
+
+                </div>
+                <div class="single_cat_left_content floatleft">
+                    <img src="{% static 'images/Photo-1-og_image.png' %}" alt="">
+                    <h3>Farmers To Cut Losses As Guidelines Launched For Avocado, Beans And Peas Best Practice </h3>
+                    <p>Farmers have a reason to smile with the launch of a guide to guide good agricultural practices
+                        for avocado, beans and peas in pods.
+                        The guide launched by the National Horticulture Task-force on Thursday seeks to address
+                        challenges relating to the commercial quality and the regulatory requirements.
+
+                        The task force constitutes horticultural stakeholders in the private and public sector. </p>
+                    <p class="single_cat_left_content_meta">
+                        | Source: KTN</p>
+
+                </div>
+
             </div>
-            <div class="single_cat_left_content floatleft">
-              <h3>Lorem ipsum dolor sit amet conse ctetur adipiscing elit </h3>
-              <p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor ...interdum</p>
-              <p class="single_cat_left_content_meta">by <span>John Doe</span> |  29 comments</p>
+            <div class="single_left_coloum_wrapper single_cat_left">
+                <h2 class="title">Africa news</h2>
+                <a class="more" href="#">more</a>
+                <div class="single_cat_left_content floatleft">
+                    <img
+                            src="{% static 'images/Heads-of-States-og_image.png' %}"
+                            alt=""/>
+                    <h3>DRC Peace Talks: Regional Leaders Call For Ceasefire, Voluntary Disarmament By Armed
+                        Groups. </h3>
+                    <p>Heads of States from African countries, government officials and representatives of guarantor
+                        institutions have urged armed groups in eastern DRC, Sudan and other parts of the region to
+                        cease hostility without conditions.</p>
+                    <p class="single_cat_left_content_meta">by <span>Royal Media </span> | 29 comments</p>
+                </div>
+                <div class="single_cat_left_content floatleft">
+                    <img src="{% static 'images/220624052734-02-ekweremadu-wife-arrested-uk.png' %}" alt="">
+                    <h3>Nigerian senator jailed for nine years in UK organ harvesting plot </h3>
+                    <p>
+                        A Nigerian senator, his wife and a doctor were on Friday jailed over an organ harvesting plot
+                        involving a young man who was trafficked to the UK for his kidney, Britain’s Crown Prosecution
+                        Service (CPS) said in a statement.</p>
+                    <p class="single_cat_left_content_meta">by <span> Nimi Princewil</span> | 1255 comments</p>
+                </div>
+
             </div>
-            <div class="single_cat_left_content floatleft">
-              <h3>Lorem ipsum dolor sit amet conse ctetur adipiscing elit </h3>
-              <p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor ...interdum</p>
-              <p class="single_cat_left_content_meta">by <span>John Doe</span> |  29 comments</p>
-            </div>
-            <div class="single_cat_left_content floatleft">
-              <h3>Lorem ipsum dolor sit amet conse ctetur adipiscing elit </h3>
-              <p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor ...interdum</p>
-              <p class="single_cat_left_content_meta">by <span>John Doe</span> |  29 comments</p>
-            </div>
-          </div>
         </div>
         <div class="right_coloum floatright">
-          <div class="single_right_coloum">
-            <h2 class="title">from the desk</h2>
-            <ul>
-              <li>
-                <div class="single_cat_right_content">
-                  <h3>Lorem ipsum dolor sit amet conse ctetur adipiscing elit</h3>
-                  <p>Nulla quis lorem neque, mattis venen atis lectus. In interdum ull amcorper dolor eu mattis.</p>
-                  <p class="single_cat_right_content_meta"><a href="#"><span>read more</span></a> 3 hours ago</p>
+            <div class="single_right_coloum">
+                <h2 class="title">from the desk</h2>
+                <ul>
+                    <li>
+                        <div class="single_cat_right_content">
+                            <h3>The gigantic moon hotel that could be built in Dubai</h3>
+                            <p>Whether it’s a blast into suborbital space or a hotel stay among the stars, space tourism
+                                entrepreneurs believe one day we’ll all be opting for out-of-this-world vacations.</p>
+                            <p class="single_cat_right_content_meta"><a href="#"><span>read more</span></a> 3 hours ago
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="single_cat_right_content">
+                            <h3>Taylor Swift announces July release of ‘Speak Now (Taylor’s Version)’</h3>
+                            <p>First released in 2010, “Speak Now” was written by Swift when she was 18-20 years old,
+                                she said.</p>
+                            <p class="single_cat_right_content_meta"><a href="#"><span>read more</span></a> 2 hours ago
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="single_cat_right_content">
+                            <h3>Two strangers met on the River Nile. They’ve been married for 25 years</h3>
+                            <p>
+                                Christina Ward had only known Wahid Kandil for six months when he asked her to marry
+                                him.
+
+                                The couple were sitting on a bench overlooking the River Nile one evening, the ancient
+                                Temple of Luxor illuminated behind them.</p>
+                            <p class="single_cat_right_content_meta"><a href="#"><span>read more</span></a> 4 hours ago
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <a class="popular_more" href="#">more</a></div>
+            <div class="single_right_coloum">
+                <h2 class="title">editorial</h2>
+                <div class="single_cat_right_content editorial"><img
+                            src="{% static 'images/230502073419-sheila-bair-file-restricted-033023.png' %}"
+                            alt=""/>
+                    <h3>Sheila Bair to Jerome Powell: Stop trying to look so tough on inflation. It will backfire
+                        Matt Egan
+                        By Matt Egan, CNN</h3>
                 </div>
-              </li>
-              <li>
-                <div class="single_cat_right_content">
-                  <h3>Lorem ipsum dolor sit amet conse ctetur adipiscing elit</h3>
-                  <p>Nulla quis lorem neque, mattis venen atis lectus. In interdum ull amcorper dolor eu mattis.</p>
-                  <p class="single_cat_right_content_meta"><a href="#"><span>read more</span></a> 3 hours ago</p>
+                <div class="single_cat_right_content editorial"><img
+                            src="{% static 'images/230418101123-20230418-sports-napoli-soccer-club-maradona.png' %}"
+                            alt=""/>
+                    <h3>Napoli’s Serie A title win: From Maradona and financial bankruptcy to Scudetto</h3>
                 </div>
-              </li>
-              <li>
-                <div class="single_cat_right_content">
-                  <h3>Lorem ipsum dolor sit amet conse ctetur adipiscing elit</h3>
-                  <p>Nulla quis lorem neque, mattis venen atis lectus. In interdum ull amcorper dolor eu mattis.</p>
-                  <p class="single_cat_right_content_meta"><a href="#"><span>read more</span></a> 3 hours ago</p>
+                <div class="single_cat_right_content editorial"><img
+                            src="{% static 'images/http___cdn.cnn.com_cnnnext_dam_assets_230503120033-jameela-jamil-file-081522.jpg' %}"
+                            alt=""/>
+                    <h3>Jameela Jamil slams Met Gala for celebrating Karl Lagerfeld</h3>
                 </div>
-              </li>
-            </ul>
-            <a class="popular_more" href="#">more</a> </div>
-          <div class="single_right_coloum">
-            <h2 class="title">editorial</h2>
-            <div class="single_cat_right_content editorial"> <img src="{% static 'images/editorial_img.png' %}" alt="" />
-              <h3>Lorem ipsum dolor sit amet con se cte tur adipiscing elit</h3>
+                <div class="single_cat_right_content editorial"><img
+                            src="{% static 'images/230428161428-donald-trump-new-hampshire-230427.png' %}"
+                            alt=""/>
+                    <h3>Trump’s own campaign can’t find proof for his ‘mental institutions’ immigration story</h3>
+                </div>
             </div>
-            <div class="single_cat_right_content editorial"> <img src="{% static 'images/editorial_img.png' %}" alt="" />
-              <h3>Lorem ipsum dolor sit amet con se cte tur adipiscing elit</h3>
-            </div>
-            <div class="single_cat_right_content editorial"> <img src="{% static 'images/editorial_img.png' %}" alt="" />
-              <h3>Lorem ipsum dolor sit amet con se cte tur adipiscing elit</h3>
-            </div>
-            <div class="single_cat_right_content editorial"> <img src="{% static 'images/editorial_img.png' %}" alt="" />
-              <h3>Lorem ipsum dolor sit amet con se cte tur adipiscing elit</h3>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="sidebar floatright">
-        <div class="single_sidebar"> <img src="{% static 'images/add1.png' %}" alt="" /> </div>
-        <div class="single_sidebar">
-          <div class="news-letter">
-            <h2>Sign Up for Newsletter</h2>
-            <p>Sign up to receive our free newsletters!</p>
-            <form action="#" method="post">
-              <input type="text" value="Name" id="name" />
-              <input type="text" value="Email Address" id="email" />
-              <input type="submit" value="SUBMIT" id="form-submit" />
-            </form>
-            <p class="news-letter-privacy">We do not spam. We value your privacy!</p>
-          </div>
-        </div>
-        <div class="single_sidebar">
-          <div class="popular">
-            <h2 class="title">Popular</h2>
-            <ul>
-              <li>
-                <div class="single_popular">
-                  <p>Sept 24th 2045</p>
-                  <h3>Lorem ipsum dolor sit amet conse ctetur adipiscing elit <a href="#" class="readmore">Read More</a></h3>
-                </div>
-              </li>
-              <li>
-                <div class="single_popular">
-                  <p>Sept 24th 2045</p>
-                  <h3>Lorem ipsum dolor sit amet conse ctetur adipiscing elit <a href="#" class="readmore">Read More</a></h3>
-                </div>
-              </li>
-              <li>
-                <div class="single_popular">
-                  <p>Sept 24th 2045</p>
-                  <h3>Lorem ipsum dolor sit amet conse ctetur adipiscing elit <a href="#" class="readmore">Read More</a></h3>
-                </div>
-              </li>
-              <li>
-                <div class="single_popular">
-                  <p>Sept 24th 2045</p>
-                  <h3>Lorem ipsum dolor sit amet conse ctetur adipiscing elit <a href="#" class="readmore">Read More</a></h3>
-                </div>
-              </li>
-              <li>
-                <div class="single_popular">
-                  <p>Sept 24th 2045</p>
-                  <h3>Lorem ipsum dolor sit amet conse ctetur adipiscing elit <a href="#" class="readmore">Read More</a></h3>
-                </div>
-              </li>
-            </ul>
-            <a class="popular_more">more</a> </div>
-        </div>
-        <div class="single_sidebar"> <img src="{% static 'images/add1.png' %}" alt="" /> </div>
-        <div class="single_sidebar">
-          <h2 class="title">ADD</h2>
-          <img src="{% static 'images/add2.png' %}" alt="" /> </div>
-      </div>
     </div>
+    <div class="sidebar floatright">
+        <div class="single_sidebar"><img src="{% static 'images/add1.png' %}" alt=""/></div>
+        <div class="single_sidebar">
+            <div class="news-letter">
+                <h2>Sign Up for Newsletter</h2>
+                <p>Sign up to receive our free newsletters!</p>
+                <form action="#" method="post">
+                    <input type="text" value="Name" id="name"/>
+                    <input type="text" value="Email Address" id="email"/>
+                    <input type="submit" value="SUBMIT" id="form-submit"/>
+                </form>
+                <p class="news-letter-privacy">We do not spam. We value your privacy!</p>
+            </div>
+        </div>
+        <div class="single_sidebar">
+            <div class="popular">
+                <h2 class="title">Popular</h2>
+                <ul>
+                    <li>
+                        <div class="single_popular">
+                            <p>May 7th 2023</p>
+                            <h3>Afghan women judges urge world to help after Taliban death threats <a href="#"
+                                                                                                      class="readmore">Read
+                                    More</a></h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="single_popular">
+                            <p>May 7th 2023</p>
+                            <h3>Stung by losses, Filipino players ditch Axie Infinity crypto game <a href="#"
+                                                                                                     class="readmore">Read
+                                    More</a></h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="single_popular">
+                            <p>May 7th 2023</p>
+                            <h3>Stark choices for Lebanon’s trans people in economic freefall <a href="#"
+                                                                                                 class="readmore">Read
+                                    More</a></h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="single_popular">
+                            <p>May 7th 2023</p>
+                            <h3>Will Italy’s decision on ChatGPT stand the test of time? <a href="#" class="readmore">Read
+                                    More</a></h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="single_popular">
+                            <pMay 7th 2023
+                            </p>
+                            <h3>How can Brazil's cycle of Amazon land grabs be broken? <a href="#" class="readmore">Read
+                                    More</a></h3>
+                        </div>
+                    </li>
+                </ul>
+                <a class="popular_more">more</a></div>
+        </div>
+        <div class="single_sidebar"><img src="{% static 'images/add1.png' %}" alt=""/></div>
+        <div class="single_sidebar">
+            <h2 class="title">ADD</h2>
+            <img src="{% static 'images/add2.png' %}" alt=""/></div>
+    </div>
+</div>

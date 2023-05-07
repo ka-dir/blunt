@@ -22,20 +22,8 @@ def home_page(request):
     return render(request, 'base/home.html.twig', context)
 
 
-def general_page(request):
-    url = f'https://newsapi.org/v2/top-headlines?category=general&apiKey={API_KEY}'
-    res = requests.get(url)
-    data = res.json()
-    articles = data['articles'][:3]
-    context = {'articles': articles}
-    return render(request, 'base/home.html.twig', context)
 
-def technology_page(request):
-    url = f'https://newsapi.org/v2/top-headlines?category=technology&apiKey={API_KEY}'
-    res = requests.get(url)
-    data = res.json()
-    articles = data['articles'][:3]
-    context = {'articles': articles}
-    return render(request, 'base/home.html.twig', context)
+
+
 
 
